@@ -3,6 +3,7 @@ import tempfile
 import streamlit as st
 from streamlit_chat import message
 from agent import Agent
+from typing import Union
 
 st.set_page_config(page_title="ChatPDF")
 

@@ -60,7 +60,7 @@ def main():
             len(st.session_state["input_OPENAI_API_KEY"]) > 0
             and st.session_state["input_OPENAI_API_KEY"] != st.session_state["OPENAI_API_KEY"]
         ):
-            st.session_state["OPENAI_API_KEY"] = st.session_state["input_OPENAI_API_KEY"]
+            st.session_state["OPENAI_API_KEY"] = st.session_state["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"]
             if st.session_state["agent"] is not None:
                 st.warning("Please, upload the files again.")
             st.session_state["messages"] = []

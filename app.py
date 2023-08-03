@@ -55,7 +55,7 @@ def main():
 
     st.header("SDMpdf")
 
-    if st.text_input("OpenAI API Key", value=st.session_state["OPENAI_API_KEY"], key="input_OPENAI_API_KEY", type="password"):
+    if st.text_input("OpenAI API Key", value=st.session_state["OPENAI_API_KEY"], key="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", type="password"):
         if (
             len(st.session_state["input_OPENAI_API_KEY"]) > 0
             and st.session_state["input_OPENAI_API_KEY"] != st.session_state["OPENAI_API_KEY"]

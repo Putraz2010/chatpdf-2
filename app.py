@@ -55,12 +55,12 @@ def main():
 
     st.header("SDMpdf")
 
-    if st.text_input("OpenAI API Key", value=st.session_state["OPENAI_API_KEY"], key="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", type="password"):
+    if st.text_input("OpenAI API Key", value=st.session_state["OPENAI_API_KEY"], key="input_OPENAI_API_KEY", type="password"):
         if (
             len(st.session_state["input_OPENAI_API_KEY"]) > 0
             and st.session_state["input_OPENAI_API_KEY"] != st.session_state["OPENAI_API_KEY"]
         ):
-            st.session_state["OPENAI_API_KEY"] = st.session_state["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"]
+            st.session_state["OPENAI_API_KEY"] = st.session_state["input_OPENAI_API_KEY"]
             if st.session_state["agent"] is not None:
                 st.warning("Please, upload the files again.")
             st.session_state["messages"] = []
